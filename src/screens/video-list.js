@@ -14,9 +14,7 @@ class VideoList extends React.Component {
 
 	getData() {
 		if (Object.keys(this.props.selected_tutorial).length > 0) {
-			return this.props.selected_tutorial.video.map(item => {
-				return { key: item.key, video_id: item.video_id, title: item.title, description: item.description };
-			});
+			return this.props.selected_tutorial.video;
 		} else {
 			return [];
 		}

@@ -26,6 +26,13 @@ class Video extends React.Component {
 						style={{ alignSelf: "stretch", height: 300 }}
 					/>
 				)}
+				<View style={{ padding: 15 }}>
+					<View style={{ borderBottomWidth: 0.5, borderBottomColor: "#ebebeb", marginBottom: 10 }}>
+						<Text style={{ fontWeight: "bold", fontSize: 14 }}>{this.props.navigation.state.params.title}</Text>
+						<View style={{ height: 3, backgroundColor: "red", width: 150, marginTop: 8 }} />
+					</View>
+					<Text style={{ fontSize: 13, color: "#666" }}>{this.props.navigation.state.params.description}</Text>
+				</View>
 			</View>
 		);
 	}
